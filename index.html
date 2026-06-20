@@ -2,59 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crest and Coast - Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ok to Be Offended | Sharkbar Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      text-align: center;
-    }
-    .container {
-      max-width: 500px;
-      padding: 20px;
-    }
-    .logo {
-      max-width: 200px;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: #333;
-    }
-    p {
-      margin-bottom: 20px;
-      color: #555;
-    }
-    .social a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    .social a:hover {
-      color: #0077cc;
-    }
+    body { font-family: system-ui, sans-serif; }
   </style>
 </head>
-<body>
-  <div class="container">
-    <!-- Replace 'logo.png' with your actual logo file -->
-    <img src="logo.png" alt="Crest and Coast Logo" class="logo">
-    <h1>Our Store is Coming Soon</h1>
-    <p>Thank you for your patience! Follow us on social media for updates.</p>
-    <div class="social">
-      <a href="https://instagram.com/crestandcoast" target="_blank">Instagram</a>
-      <a href="https://facebook.com/crestandcoast" target="_blank">Facebook</a>
-      <a href="https://twitter.com/crestandcoast" target="_blank">Twitter</a>
+<body class="bg-zinc-950 text-white">
+  <nav class="bg-black border-b border-red-600">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">OBO</h1>
+      <div class="space-x-8 text-lg">
+        <a href="#listen" class="hover:text-red-400">LISTEN</a>
+        <a href="#about" class="hover:text-red-400">ABOUT</a>
+        <a href="#merch" class="hover:text-red-400">MERCH</a>
+        <a href="#sponsors" class="hover:text-red-400">SPONSORS</a>
+        <a href="#connect" class="hover:text-red-400">CONNECT</a>
+      </div>
     </div>
-  </div>
+  </nav>
+
+  <header class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1015/2000/1200')">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6">
+      <img src="logo.png" alt="Shark Logo" class="mx-auto mb-8 w-48">
+      <h1 class="text-7xl font-black tracking-tighter mb-4">OK TO BE OFFENDED</h1>
+      <p class="text-2xl text-red-400 italic">"It's ok to be offended"</p>
+      <p class="mt-8 text-xl max-w-xl mx-auto">Honest conversations about what offends us — and how we still find common ground.</p>
+    </div>
+  </header>
+
+  <section id="listen" class="py-20 bg-black">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-8">Press Play. Get Offended.</h2>
+      <p class="text-xl mb-12">New episodes every week. We say the quiet part out loud.</p>
+      <a href="https://open.spotify.com/show/1rMlZeeJuJ8cGfCG4whmzK" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 px-12 py-5 rounded-2xl text-2xl font-bold">LISTEN ON SPOTIFY</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16">About the Show</h2>
+      <p class="text-xl leading-relaxed mb-12">Ok to Be Offended is a podcast about real-life conversations and uncomfortable topics...</p>
+      <!-- Add more content as needed -->
+    </div>
+  </section>
+
+  <footer class="bg-black py-12 text-center">
+    <p>Sharkbar Studio • Powered by Crest & Coast Soap</p>
+  </footer>
 </body>
 </html>
