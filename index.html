@@ -3,54 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ok to Be Offended — real-life conversations and uncomfortable topics with Sandy and Micah. Honest, meaningful, and somehow funny.">
   <title>Ok to Be Offended | Sharkbar Studio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body { font-family: system-ui, sans-serif; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/cover-art.png">
 </head>
-<body class="bg-zinc-950 text-white">
-  <nav class="bg-black border-b border-red-600">
-    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <h1 class="text-3xl font-bold">OBO</h1>
-      <div class="space-x-8 text-lg">
-        <a href="#listen" class="hover:text-red-400">LISTEN</a>
-        <a href="#about" class="hover:text-red-400">ABOUT</a>
-        <a href="#merch" class="hover:text-red-400">MERCH</a>
-        <a href="#sponsors" class="hover:text-red-400">SPONSORS</a>
-        <a href="#connect" class="hover:text-red-400">CONNECT</a>
-      </div>
-    </div>
-  </nav>
-
-  <header class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1015/2000/1200')">
-    <div class="absolute inset-0 bg-black/70"></div>
-    <div class="relative z-10 max-w-4xl mx-auto px-6">
-      <img src="logo.png" alt="Shark Logo" class="mx-auto mb-8 w-48">
-      <h1 class="text-7xl font-black tracking-tighter mb-4">OK TO BE OFFENDED</h1>
-      <p class="text-2xl text-red-400 italic">"It's ok to be offended"</p>
-      <p class="mt-8 text-xl max-w-xl mx-auto">Honest conversations about what offends us — and how we still find common ground.</p>
-    </div>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home" class="nav-logo">OBO</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#listen">Listen</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#merch">Merch</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="listen" class="py-20 bg-black">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold mb-8">Press Play. Get Offended.</h2>
-      <p class="text-xl mb-12">New episodes every week. We say the quiet part out loud.</p>
-      <a href="https://open.spotify.com/show/1rMlZeeJuJ8cGfCG4whmzK" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 px-12 py-5 rounded-2xl text-2xl font-bold">LISTEN ON SPOTIFY</a>
-    </div>
-  </section>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <img src="assets/cover-art.png" alt="Ok to Be Offended podcast cover art — great white shark fin over a distressed American flag" class="hero-art">
+        <p class="hero-studio">Sharkbar Studio</p>
+        <h1 class="hero-title">Ok to Be Offended</h1>
+        <p class="hero-tagline">It's ok to be offended</p>
+        <p class="hero-desc">Honest conversations about what offends us — and how we still find common ground.</p>
+        <div class="hero-cta">
+          <a href="#listen" class="btn btn-primary">Listen Now</a>
+          <a href="https://open.spotify.com/show/1rMlZeeJuJ8cGfCG4whmzK" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Spotify</a>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true"></div>
+    </section>
 
-  <section id="about" class="py-20">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-16">About the Show</h2>
-      <p class="text-xl leading-relaxed mb-12">Ok to Be Offended is a podcast about real-life conversations and uncomfortable topics...</p>
-      <!-- Add more content as needed -->
-    </div>
-  </section>
+    <section id="listen" class="section listen">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Latest Episodes</span>
+          <h2>Press Play. Get Offended.</h2>
+          <p>New episodes every week. We say the quiet part out loud — and somehow it's funny.</p>
+        </div>
+        <div class="spotify-embed">
+          <iframe
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/show/1rMlZeeJuJ8cGfCG4whmzK?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            title="Ok to Be Offended on Spotify">
+          </iframe>
+        </div>
+        <div class="listen-links">
+          <a href="https://open.spotify.com/show/1rMlZeeJuJ8cGfCG4whmzK" class="platform-link" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            Follow on Spotify
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <footer class="bg-black py-12 text-center">
-    <p>Sharkbar Studio • Powered by Crest & Coast Soap</p>
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-label">About the Show</span>
+            <h2>Uncomfortable Topics. Real Conversations.</h2>
+            <p>Ok to Be Offended is a podcast about real-life conversations and uncomfortable topics. We explore what offends us, what offends you, and how people with different backgrounds and opinions can still find common ground.</p>
+            <p>With guests from our neighborhood and beyond, the conversations are honest, meaningful… and somehow funny, mostly because we say the quiet part out loud.</p>
+            <p class="about-motto">We teach it is Ok to be offended. We hope we can offend you — but we have a secret weapon: we're stupid.</p>
+          </div>
+          <div class="hosts">
+            <h3>The Crew</h3>
+            <div class="host-cards">
+              <article class="host-card host-card--lead">
+                <img src="assets/sandy.jpg" alt="Sandy, host of Ok to Be Offended" class="host-photo">
+                <div class="host-info">
+                  <span class="host-role">Host</span>
+                  <h4>Sandy</h4>
+                  <p>Says what everyone else is thinking — usually louder. Leads the conversation and isn't afraid to say the quiet part out loud.</p>
+                </div>
+              </article>
+              <article class="host-card">
+                <img src="assets/micah.jpg" alt="Micah, co-host of Ok to Be Offended" class="host-photo">
+                <div class="host-info">
+                  <span class="host-role">Co-Host</span>
+                  <h4>Micah</h4>
+                  <p>Keeps the conversation honest, even when it gets uncomfortable. The steady hand behind the chaos.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="merch" class="section merch">
+      <div class="container">
+        <div class="merch-card">
+          <div class="merch-icon" aria-hidden="true">&#9876;</div>
+          <span class="section-label">Merch</span>
+          <h2>Represent the Shark</h2>
+          <p>OBO gear is on the way — shirts, stickers, and stuff you didn't know you needed. Check back soon.</p>
+          <span class="coming-soon-badge">Coming Soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors" class="section sponsors">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Proudly Supported By</span>
+          <h2>Our Sponsors</h2>
+        </div>
+        <article class="sponsor-card">
+          <div class="sponsor-content">
+            <h3>Crest &amp; Coast</h3>
+            <p>Handmade soaps crafted with care, shared with love. Crest &amp; Coast makes body care that fits real life — honest ingredients for body and mind.</p>
+            <a href="https://www.crestandcoast.com" class="btn btn-sponsor" target="_blank" rel="noopener noreferrer">Visit Crest &amp; Coast</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="connect" class="section connect">
+      <div class="container">
+        <div class="connect-card">
+          <span class="section-label">Stay in the Loop</span>
+          <h2>Connect With Us</h2>
+          <p>Got something that offends you? Want to be a guest? Hit us up on social.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/oktobeoffended/" class="social-link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              @oktobeoffended
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Ok to Be Offended</span>
+        <span class="footer-studio">Sharkbar Studio</span>
+      </div>
+      <p class="footer-copy">&copy; 2026 Ok to Be Offended. All rights reserved.</p>
+      <div class="footer-anchor" aria-hidden="true">&#9875;</div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
