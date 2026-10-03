@@ -35,3 +35,13 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
+
+fetch('week.json')
+  .then((response) => (response.ok ? response.json() : Promise.reject()))
+  .then((week) => {
+    const art = document.querySelector('.hero-week-art');
+    const label = document.querySelector('.hero-week-label');
+    if (art && week.image) art.src = week.image;
+    if (label && week.label) label.textContent = week.label;
+  })
+  .catch(() => {});

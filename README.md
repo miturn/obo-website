@@ -69,6 +69,16 @@ Then ask me something like:
 
 I will use tools to read the local files + GitHub so I always know the exact current state.
 
+## Weekly bit
+
+The home page keeps the cover art as the main picture. Behind it, one small thing from the show changes each week.
+
+1. Put the new image in `assets/weeks/`.
+2. Point `week.json` at that file and set `label` if the corner line should change.
+3. Update the `img` inside `.hero-week` in `index.html` to the same path so it is there before JavaScript runs.
+
+This week's bit is a hologram of Sandy from the studio camera (`assets/weeks/2026-10-03-sandy-hologram.svg`).
+
 ## Next Steps / Ideas
 
 Tell me what you want to work on. Examples:
