@@ -598,13 +598,14 @@ a {
 
 .connect-card {
   text-align: center;
-  max-width: 560px;
+  max-width: 920px;
   margin: 0 auto;
 }
 
 .connect-card p {
   color: var(--text-muted);
-  margin-bottom: 2rem;
+  max-width: 520px;
+  margin: 0 auto 2rem;
 }
 
 .social-links {
